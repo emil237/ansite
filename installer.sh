@@ -1,5 +1,70 @@
 #!/bin/sh
-###
-echo "ZWNobyAiIFNDUklQVCA6IERPV05MT0FEIEFORCBJTlNUQUxMIEFOU0lURSAiCiMgQ29uZmlndXJlIHdoZXJlIHdlIGNhbiBmaW5kIHRoaW5ncyBoZXJlICMKVE1QRElSPScvdG1wJwpQQUNLQUdFPSdlbmlnbWEyLXBsdWdpbi1leHRlbnNpb25zLWFuc2l0ZScKTVlfVVJMPSdodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vZW1pbDIzNy9hbnNpdGUvbWFpbicKUFlUSE9OX1ZFUlNJT049JChweXRob24gLWMiaW1wb3J0IHN5czsgcHJpbnQoc3lzLnZlcnNpb25faW5mby5tYWpvcikiKQoKIyBDaGVjayBWZXJzaW9uICMKVkVSU0lPTj0kKHdnZXQgJE1ZX1VSTC92ZXJzaW9uIC1xTy0gfCBjdXQgLWQgIj0iIC1mMi0pCiMjIyMjIyMjIyMjIyMjIyMjIyMjCiMgIEltYWdlIENoZWNraW5nICAjCmlmIFsgLWYgL2V0Yy9vcGtnL29wa2cuY29uZiBdOyB0aGVuCiAgICBPU1RZUEU9J09wZW5zb3VyY2UnCiAgICBPUEtHPSdvcGtnIHVwZGF0ZScKICAgIE9QS0dJTlNUQUw9J29wa2cgaW5zdGFsbCcKICAgIE9QS0dMSVNUPSdvcGtnIGxpc3QtaW5zdGFsbGVkJwogICAgT1BLR1JFTU9WPSdvcGtnIHJlbW92ZSAtLWZvcmNlLWRlcGVuZHMnCmZpCgppZiBbICIkUFlUSE9OX1ZFUlNJT04iIC1lcSAzIF07IHRoZW4KICAgIGVjaG8gIjpZb3UgaGF2ZSBQeXRob24zIGltYWdlIC4uLiIKICAgIHNsZWVwIDEKICAgIGNsZWFyCmVsc2UKICAgIGVjaG8gIjpZb3UgaGF2ZSBQeXRob24yIGltYWdlIC4uLiIKICAgIHNsZWVwIDEKICAgIGNsZWFyCmZpCgojIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjCiMgUmVtb3ZlIHByZXZpb3VzIGZpbGVzIChpZiBhbnkpICMKcm0gLXJmICRUTVBESVIvIiR7UEFDS0FHRTo/fSIqID4vZGV2L251bGwgMj4mMQoKaWYgWyAiJCgkT1BLR0xJU1QgJFBBQ0tBR0UgfCBhd2sgJ3sgcHJpbnQgJDMgfScpIiA9ICIkVkVSU0lPTiIgXTsgdGhlbgogICAgZWNobyAiIFlvdSBhcmUgdXNlIHRoZSBsYXN0ZSBWZXJzaW9uOiAkVkVSU0lPTiIKICAgIGV4aXQgMQplbGlmIFsgLXogIiQoJE9QS0dMSVNUICRQQUNLQUdFIHwgYXdrICd7IHByaW50ICQzIH0nKSIgXTsgdGhlbgogICAgZWNobwogICAgY2xlYXIKZWxzZQogICAgJE9QS0dSRU1PViAkUEFDS0FHRQpmaQokT1BLRyA+L2Rldi9udWxsIDI+JjEKIyMjIyMjIyMjIyMjIyMjIyMjIwojICBJbnN0YWxsIFBsdWdpbiAjCgplY2hvICJJbnNhbGxsaW5nIEFuc2l0ZSBwbHVnaW4gUGxlYXNlIFdhaXQgLi4uLi4uIgppZiBbICIkUFlUSE9OX1ZFUlNJT04iIC1lcSAzIF07IHRoZW4KICAgIHdnZXQgJE1ZX1VSTC8ke1BBQ0tBR0V9XyIke1ZFUlNJT059Il9weTNfYWxsLmlwayAtcVAgJFRNUERJUgogICAgJE9QS0dJTlNUQUwgJFRNUERJUi8ke1BBQ0tBR0V9XyIke1ZFUlNJT059Il9weTNfYWxsLmlwawplbHNlCiAgICB3Z2V0ICRNWV9VUkwvJHtQQUNLQUdFfV8iJHtWRVJTSU9OfSJfcHkyX2FsbC5pcGsgLXFQICRUTVBESVIKICAgICRPUEtHSU5TVEFMICRUTVBESVIvJHtQQUNLQUdFfV8iJHtWRVJTSU9OfSJfcHkyX2FsbC5pcGsKZmkKCiMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMKIyBSZW1vdmUgZmlsZXMgKGlmIGFueSkgIwpybSAtcmYgJFRNUERJUi8iJHtQQUNLQUdFOj99IiogPi9kZXYvbnVsbCAyPiYxCgpzbGVlcCAyCmVjaG8gIiIKZWNobyAiKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioiCmVjaG8gIioqICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAqIgplY2hvICIqKiAgICAgICAgICAgICAgICAgICAgICAgQW5zaXRlICAgICA6ICRWRVJTSU9OICAgICAgICAgICAgICAgICAgICAgICAgICAgICAqIgplY2hvICIqKiAgID4+Pj4+Pj4+Pj4gIFVwbG9hZGVkIGJ5OiBFTUlMX05BQmlMICAgICAgICAgICAgICAgICAgICAgKiIKZWNobyAiKiogICAgICAgICAgICAgICAgICAgICAgIERldmVsb3AgYnkgOiBhaW1lX2pldXggICAgICAgICAgICAgICAgICAgICAgICoiCmVjaG8gIioqICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAqIgplY2hvICIqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKiIKZWNobyAiIgpleGl0IDA=" | base64 -d | sh
+# ###########################################
+# SCRIPT : DOWNLOAD AND INSTALL ANSITE
+# ###########################################
+#
+# Command: wget https://raw.githubusercontent.com/emil237/ansite/main/installer.sh -qO - | /bin/sh
+#
+# ###########################################
 
+TMPDIR='/tmp'
+PACKAGE='enigma2-plugin-extensions-ansite'
+MY_URL='https://raw.githubusercontent.com/emil237/ansite/main'
+PYTHON_VERSION=$(python -c "import sys; print(sys.version_info.major)" 2>/dev/null || python -c "import sys; print(sys.version_info[0])")
 
+if [ -f /etc/opkg/opkg.conf ]; then
+    OSTYPE='Opensource'
+    OPKG='opkg update'
+    OPKGINSTAL='opkg install'
+    OPKGLIST='opkg list-installed'
+    OPKGREMOV='opkg remove --force-depends'
+fi
+
+if [ "$PYTHON_VERSION" -eq 3 ]; then
+    echo "You have Python3 image..."
+    sleep 1
+    clear
+else
+    echo "You have Python2 image..."
+    sleep 1
+    clear
+fi
+
+rm -rf "$TMPDIR/${PACKAGE:?}"* >/dev/null 2>&1
+
+INSTALLED_VERSION=$($OPKGLIST $PACKAGE 2>/dev/null | awk '{ print $3 }')
+
+if [ -n "$INSTALLED_VERSION" ]; then
+    if [ "$INSTALLED_VERSION" = "$VERSION" ]; then
+        echo "You are using the latest version: $VERSION"
+        exit 1
+    else
+        echo "Removing previous version ($INSTALLED_VERSION)..."
+        $OPKGREMOV $PACKAGE
+    fi
+fi
+
+echo "Updating package lists..."
+$OPKG >/dev/null 2>&1
+
+echo "Installing Ansite plugin. Please Wait..."
+if [ "$PYTHON_VERSION" -eq 3 ]; then
+    wget "$MY_URL/enigma2-plugin-extensions-ansite_1.10.py3_all.ipk" -qP "$TMPDIR"
+    $OPKGINSTAL "$TMPDIR/enigma2-plugin-extensions-ansite_1.10.py3_all.ipk"
+else
+    wget "$MY_URL/enigma2-plugin-extensions-ansite_1.5_py2_all.ipk" -qP "$TMPDIR"
+    $OPKGINSTAL "$TMPDIR/enigma2-plugin-extensions-ansite_1.5_py2_all.ipk"
+fi
+
+rm -rf "$TMPDIR/${PACKAGE:?}"* >/dev/null 2>&1
+
+sleep 2
+echo ""
+echo "***********************************************************************"
+echo "**                                                                    *"      
+echo "**   >>>>>>>>>>  Uploaded by: EMIL_NABiL                     *"
+echo "**                       Developed by: aime_jeux                      *"
+echo "**                                                                    *"
+echo "***********************************************************************"
+echo ""
+exit 0
